@@ -18,8 +18,12 @@ app.get('/api/user', (req, res) => {
     /* It's still in beta, but more could be added soon. */
     let name = fm.name({lang: 'en', count: 100})
     let randomname = name[Math.floor(Math.random() * name.length)];
-    randomname = randomname.charAt(0).toLowerCase() + randomname.slice(1);
-    let email = randomname.split(' ')[0] + Math.floor(Math.random() * 100000) + '@gmail.com';
+    let randomemail = [
+        randomname.split(' ')[0] + Math.floor(Math.random() * 100000) + '@gmail.com',
+        randomname.split(' ')[0] + Math.floor(Math.random() * 100000) + '@yahoo.com',
+        randomname.split(' ')[0] + Math.floor(Math.random() * 100000) + '@outlook.com'
+    ]
+    let email = randomemail[Math.floor(Math.random() * randomemail.length)];
     let phone = Math.floor(Math.random() * 10000000000);
     let location = [
         "Canada",
