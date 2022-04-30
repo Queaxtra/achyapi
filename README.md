@@ -1,5 +1,5 @@
 # achyAPI
-These files were created and shared by stachy#8769.
+These files were created and shared by Queaxtra#0010.
 
 # What is this?
 First of all, there are currently 2 APIs. One of them is the random user creation api. This api contains random name and surname, email, location and phone number, but more will be added soon.
